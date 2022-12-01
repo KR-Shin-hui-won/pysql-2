@@ -4,7 +4,7 @@ import pymysql
 app = Flask(__name__)
 
 user = 'default'
-db = pymysql.connect(host='database-2.cq6pri6dgw7y.ap-northeast-1.rds.amazonaws.com', port=3306, user='admin', password='password', db='AWS_MYSQL', charset='utf8')
+db = pymysql.connect(host='host', port=3306, user='user', password='password', db='db', charset='utf8')
 curs = db.cursor()
 
 @app.route('/')
